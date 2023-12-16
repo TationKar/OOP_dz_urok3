@@ -49,12 +49,6 @@ public class Pharmacy implements Iterable<PharmancyComponent>, Comparable<Pharma
                 '}' + "\n";
     }
 
-    // вынесенный класс Iterable
-//    @Override
-//    public Iterator<PharmancyComponent> iterator() {
-//        return new IteratorComponent(this);
-//    }
-
     //анонимный класс Iterable
     @Override
     public Iterator<PharmancyComponent> iterator() {

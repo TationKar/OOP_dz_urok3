@@ -52,19 +52,6 @@ public class Main {
         System.out.println("/////////////////////////");
         System.out.println(set);
 
-        //Collections.sort(pharmacies, new );
-
-
-        //Iterator<PharmancyComponent> iterator = pharmacy1;
-
-//        while (iterator.hasNext()){
-//            System.out.println(iterator.next());
-//        }
-
-//        while (((Iterator<PharmancyComponent>) pharmacy1).hasNext()) {
-//            System.out.println(((Iterator<PharmancyComponent>) pharmacy1).next());
-//        }
-
         // ДОМАШНЕЕ ЗАДАНИЕ Урок 3. Некоторые стандартные интерфейсы Java и примеры их использования
         Pharmacy pharmacy3 = new Pharmacy().addComponent(azitroment).addComponent(water);
         Pharmacy pharmacy4 = new Pharmacy().addComponent(azitroment).addComponent(water);

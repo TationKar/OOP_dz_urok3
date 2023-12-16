@@ -6,9 +6,6 @@ public class PharmancyComponent implements Comparable<PharmancyComponent> {
     private String weight;
     private int power;
 
-
-
-
     public PharmancyComponent(String name, String weight, int power) {
         this.name = name;
         this.weight = weight;
@@ -55,6 +52,18 @@ public class PharmancyComponent implements Comparable<PharmancyComponent> {
         res = 31*res + getWeight().length();
         res = 31*res + getPower();
         return res;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        PharmancyComponent that = (PharmancyComponent) o;
+
+        if (power != that.power) return false;
+        if (!name.equals(that.name)) return false;
+        return weight.equals(that.weight);
     }
 
     @Override
